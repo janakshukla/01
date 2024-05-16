@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 
 const App = () => {
-  const [length, setlength] = useState(0);
+  const [length, setlength] = useState(7);
   const [numall, setnumall] = useState(false);
   const [charall, setcharall] = useState(false);
   const [pass, setpass] = useState("");
@@ -29,7 +29,7 @@ const App = () => {
 
   useEffect(() => {
     passwordgenrator();
-  }, [length, numall, charall, passwordgenrator]);
+  }, [length, numall, charall, passwordgenrator, setpass]);
 
   return (
     <>
